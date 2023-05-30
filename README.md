@@ -54,3 +54,7 @@ To create a build within Jenkins, follow the steps below:
 Output should look like this:
 
 ![alt text](./assets/jenkins-console-output.png)
+
+## Adding Webhooks
+
+To learn how to add webhooks you can visit this [file](./web-hooks.md)
