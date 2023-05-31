@@ -58,3 +58,7 @@ Output should look like this:
 ## Adding Webhooks
 
 To learn how to add webhooks you can visit this [file](./web-hooks.md)
+
+## How to create jenkins project to merge branches
+
+To learn how to create a jenkins project that will merge branches before build, follow this guide [here](./ci-merge.md)
