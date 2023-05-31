@@ -8,7 +8,7 @@ In order to integrate our github & jenkins we can follow the steps below. The re
 
 ![alt text](./assets/github-webhooks-menu.png)
 
-2. Click on `add webhook` option presented in this section and you should see a screen that looks like below. In `payload URl` enter the job URL from jenkins and add `/github-webhook/` at the end. For 'Which events would you like to trigger this webhook?' you should select `Let me select individual events` and select `push` and `pull` as below
+2. Click on `add webhook` option presented in this section and you should see a screen that looks like below. In `payload URl` enter the IP address for jenkins and add `/github-webhook/` at the end. For 'Which events would you like to trigger this webhook?' you should select `Let me select individual events` and select `push` and `pull` as below
 
 ![alt text](./assets/webhooks-options.png)
 
