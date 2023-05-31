@@ -4,9 +4,9 @@ You need to have an ec2 instance from App AMI running for this task.
 
 1. Setup another Jenkins project, you can follow the guide [here](./README.md), you'll need to add some aditional configuration as follows:
 
-- In `Source Code Management`, you would need to select `none` for this job, this is because our github branches have already been merged as part of the previous job. We would also ignore `build triggers` because this job will be run automatically if our `ahmed-ci-merge` build is stable. (`ahmed-cd` is included in post build actions of `ahmed-ci-merge`)
+- In `Source Code Management`, add `ssh` link to the github repo in `Repository URL` and add the branch as `main` as previous job would have merged all changes from `dev` to `main`, this is because our github branches have already been merged as part of the previous job. We would also ignore `build triggers` because this job will be run automatically if our `ahmed-ci-merge` build is stable. (`ahmed-cd` is included in post build actions of `ahmed-ci-merge`)
 
-- In cd project on jenkins, add the following script to be exceuted in Build:
+- In cd project on jenkins, add the following script to be executed in Build:
 
 ```
 rsync -avz -e "ssh -o StrictHostKeyChecking=no" app ubuntu@ec2-34-249-181-151.eu-west-1.compute.amazonaws.com:/home/ubuntu
