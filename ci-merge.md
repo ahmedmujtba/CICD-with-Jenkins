@@ -4,8 +4,8 @@ In Jenkins, create a new job titled `ahmed-ci-merge`, you can use the guide [her
 
 Additional steps are below:
 
-1. We will need to configure the `source code management` section for this task, after integrating your github repo, you'll need to change the `branches to build` to `dev. NOTE: add your repo name as `origin`.
-2. Select `Merge before build` in `Additonal behaviour` and add `main` as your branch to merge to. It should look like this:
+1. We will need to configure the `source code management` section for this task, after integrating your github repo, you'll need to change the `branches to build` to `dev`.
+2. Select `Merge before build` in `Additonal behaviour` and add `main` as your branch to merge to. NOTE: add your repo name as `origin`. It should look like this:
 
 ![alt text](./assets/merge%20after%20build.png)
 
