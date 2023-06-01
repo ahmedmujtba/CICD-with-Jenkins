@@ -27,6 +27,14 @@ Jenkins deployment takes place in multiple stages, at minimum you would have thr
 
 ![alt text](./assets/jenkins-how-it-works.png)
 
+- We have SSH connections established already from local machines to github and from github to Jenkins using SSH Keys.
+- Everytime a change is made to the source code and pushed to github, by adding webhooks we can get Jenkins to fetch that code run tests through jobs we have created.
+- Agent Node takes care of all the testing, and if all tests have passed, Master Code oversees the steps involving continous delivery and deployment to production.
+
+## How CI/CD works
+
+![alt text](./assets/continuous_delivery.4f4cddb8556e2b1a0ca0872ace4d5fe2f68bbc58.png)
+
 ## Using Jenkins
 
 - To create a build within Jenkins, follow the steps in the guide [here](./jenkins-job.md)
