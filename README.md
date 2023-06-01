@@ -12,8 +12,6 @@ How it works:
 - doesnt eliminate need to create scripts for individual steps
 - faster way to integrate chain of build, test, and deployment tools
 
-![alt text](./assets/jenkins-how-it-works.png)
-
 ## Other tools like Jenkins
 
 - CircleCI
@@ -23,42 +21,24 @@ How it works:
 - Copado CI/CD
 - Azure DevOps Server
 
+## Jenkins Stages
+
+Jenkins deployment takes place in multiple stages, at minimum you would have three stages defined as `Build`, `Test` and `Deploy`. Below diagram shows different stages of jenkins:
+
+![alt text](./assets/jenkins-how-it-works.png)
+
 ## Using Jenkins
 
-To create a build within Jenkins, follow the steps below:
-
-1. You can enter your IP address from AWS with port `8080` as that's default for jenkins. It would look something like this:
-
-```
-3.9.13.91:8080
-```
-
-2. Select `New Item` and name your build appropriately i.e. `ahmed-checking-Jenkins-OS`. As our task is simple we would choose the type of project as `Freestyle Project` as it looks in this screenshot:
-
-![alt text](./assets/jenkins-new-item.png)
-
-3. Provide a brief description in the `General` tab and move forward to the `Build` part. We're only running a shell command for our demo so you should select `excute shell` option as follows:
-
-![alt text](./assets/jenkins-build.png)
-
-4. Click `save` and `apply`
-
-5. You should be able to view your project in the dashboard and select it and once selected see options as shown below:
-
-![alt text](./assets/jenkins-project.png)
-
-6. Click on `Build now` as shown above and from the build history shown under the menu on the left you can choose `console output` to view the output of the command you added in your project.
-
-![alt text](./assets/jenkins-console-option.png)
-
-Output should look like this:
-
-![alt text](./assets/jenkins-console-output.png)
+- To create a build within Jenkins, follow the steps in the guide [here](./jenkins-job.md)
 
 ## Adding Webhooks
 
-To learn how to add webhooks you can visit this [file](./web-hooks.md)
+- To learn how to add webhooks you can visit this [file](./web-hooks.md)
 
 ## How to create jenkins project to merge branches
 
-To learn how to create a jenkins project that will merge branches before build, follow this guide [here](./ci-merge.md)
+- To learn how to create a jenkins project that will merge branches before build, follow this guide [here](./ci-merge.md)
+
+## How to deploy code from main branch to production (ec2) with Jenkins
+
+- After some code has been pushed to a specific branch in git, following the concepts of continous integration, continous delivery and continous deployment, we can send this code to production in AWS once all tests have been passed. To do this using Jenkins, you can follow the guide [here](./cicd-production.md)
