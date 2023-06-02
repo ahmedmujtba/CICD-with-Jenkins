@@ -6,7 +6,7 @@ We can follow the steps below to build a Jenkins server:
 
 4.
 
-Commands used:
+Commands used in setting up jenkins within aws ec2
 
 sudo apt-get update -y
 sudo apt-get upgrade -y
