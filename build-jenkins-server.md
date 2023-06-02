@@ -28,3 +28,5 @@ sudo systemctl status jenkins
 to get jenkins password:
 
 sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+
+Make sure to add origin as repo name
