@@ -6,6 +6,8 @@ We can follow the steps below to build a Jenkins server:
 
 4.
 
+Commands used:
+
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo wget -q -O - https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo apt-key add -
